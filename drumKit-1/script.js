@@ -1,0 +1,1 @@
+ const teclas = document.getElementsByClassName('');

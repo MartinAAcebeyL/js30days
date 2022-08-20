@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+body{
+    background: url(background.jpg);
+}
+
+#drums{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+#drums  kbd{
+    color: white;
+    font-size: 3.2rem;
+}
+
+#drums span{
+    display: block;
+    font-size: 1.8rem;
+    color: #ffc600;
+}
+
+.key{
+    width: 11rem;
+    padding: 1rem .2rem;
+    border: 0.4rem solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    transition: all .07s ease;
+
+}
