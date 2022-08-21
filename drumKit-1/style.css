@@ -10,6 +10,12 @@ body{
     background: url(background.jpg);
 }
 
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
 #drums{
     width: 100vw;
     height: 100vh;
@@ -36,6 +42,5 @@ body{
     border: 0.4rem solid black;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: .5rem;
-    transition: all .07s ease;
-
+    transition: all 0.5s ease;
 }
