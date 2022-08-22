@@ -1,13 +1,8 @@
 const keys = Array.from(document.querySelectorAll('.key'))
 
 keys.forEach(element =>{
-    element.addEventListener("transitionend", eliminar_transicion)
+    element.addEventListener("transitionend", e => e.target.classList.remove('playing'))
 });
-
-function eliminar_transicion(e) {
-    e.target.classList.remove('playing');
-}
-
 
 function tecla_presionada(e) {
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
