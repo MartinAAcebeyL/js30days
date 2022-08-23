@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3 varibles de css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <section id="titte">
+            <p>Update CSS Variables with <span>JS</span></p>
+        </section>
+        <section id="controls">
+            <label for="spacing">spacing<input type="range" name="spacing" id="spacing" value="10" data-sizing="px"></label> 
+            <label for="blur">blur<input type="range" name="blur" id="blur" min="0" max="50" value="10" data-sizing="px"></label>
+            <label for="base">color<input type="color" name="base" id="base" value="#ffc600"></label>
+            <label for="insert-image"><input type="file" name="insert-image" id="insert-image" accept="image/*" value="Suba solo images"></label>
+        </section>
+        <section id="image">
+            <figure>
+                <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="person on a mountain">
+                <figcaption>person on a mountain</figcaption>
+            </figure>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
