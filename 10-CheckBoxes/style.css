@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #ffc600;
+}
+
+#questions{
+    width: 28%;
+    margin: 50px auto;
+
+    background: white;
+    border-radius: 15px;
+    box-shadow: 50px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.item{
+    border-bottom: 1px black solid;
+    display: flex;
+}
+
+input[type=checkbox]{
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 15px;
+}
+
+.item p{
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-left: 2px solid black;
+    padding-left: 0.8rem;   
+}
+
+.item:last-child{
+    border-bottom: 0;
+}
+
+input:checked+p {
+    background: #F9F9F9;
+    text-decoration: line-through;
+}
