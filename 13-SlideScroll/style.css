@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.site-wrap{
+    width: 45%;
+    margin: 100px auto;
+    background-color: white;
+    padding: 1.4rem;
+    text-align: justify;
+}
+
+.align-right{
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.align-left{
+    float: left;
+    margin-bottom: 0.2rem;
+    margin-right: 1.5rem;
+}
+
+.slide-in {
+    opacity: 0.2;
+    transition: all 0.5s;
+}
+
+.align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
