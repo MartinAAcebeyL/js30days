@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e4ae8 100%);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+}
+
+#video{
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* cuando este en pantalla completa */
+#video:fullscreen {
+    max-width: none;
+    width: 100%;
+}
+
+#video:hover .progress{
+    height: 1.2rem;
+}
+
+#video:hover .player_controls {
+    transform: translateY(0);
+}
+
+.player_controls{
+    width: 100%;
+    background-color: white;
+
+    position: absolute;
+    bottom: 10px;
+    transition: all 1s;
+    transform: translateY(100%) translateY(2px);
+}
+
+.player_controls .progress {
+    width: 100%;
+    height: 1rem;
+    position: relative;
+    background-color: #8be425;
+    cursor: ew-resize;
+}
+
+#controls{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    transition: all .3s;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.4rem;
+}
+
+.player_button{
+    background: none;
+    border: 0;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.player_button:focus {
+    border-radius: 0.5rem;
+    border: 2px solid #ffc600;
+}
+
+.player_controls>* {
+    flex: 1;
+}
+
+.player_slider {
+    flex: 2;
+}
+
+
+
+input[type=range] {
+    margin: 0 15px;
+} 
+
+input[type=range]::-webkit-slider-runnable-track {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(66, 240, 66, 0.8);
+}

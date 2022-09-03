@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reto 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="video">
+        <video src="videp.mp4"></video>
+        
+        <section class="player_controls">
+            <div class="content_progress" style="width: 100%;">
+                <div class="progress"></div>
+            </div>
+        
+            <section id="controls">
+                <button class="player_button">►</button>
+                <input type="range" name="volume"    class="player_slider" min="0" max="100" value="50">
+                <input type="range" name="velocidad" class="player_slider" min="0.5" max="2" step="0.5" value="1">
+                <button data-skip="-10" class="player_button">« 10s</button>
+                <button data-skip="25" class="player_button">25s »</button>
+            </section>
+        </section>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
