@@ -1,0 +1,18 @@
+h1 {
+    font-size: 4.5rem;
+    text-transform: capitalize;
+
+    text-shadow: 0.3rem 0.3rem red, 
+                 -0.6rem 0.6rem yellow, 
+                 -0.9rem 0.9rem green, 
+                 1.2rem -1.2rem purple;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
