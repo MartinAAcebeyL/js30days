@@ -1,0 +1,4 @@
+reto 15
+    *preventDefault
+    previene la accion por defecto de ciertos etiquetas html
+    .l
