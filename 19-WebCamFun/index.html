@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="content">
+        <div class="controls">
+            <button onClick="takePhoto()">Take Photo</button>
+            <label for="red"> Red: <input type="range" name="red" id="red" min=0 max=255></label>
+            <label for="yellow">Yellow: <input type="range" name="yellow" id="yellow" min=0 max=255></label>
+            <label for="Green"> Green: <input type="range" name="Green" id="Green" min=0 max=255></label>
+        </div>
+        <video></video>
+        <canvas></canvas>
+        <div id="photos"></div>
+    </section>
+
+    <audio src="snap.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
