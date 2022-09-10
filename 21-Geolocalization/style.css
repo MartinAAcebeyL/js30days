@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px;
+    background-color: #282828;
+    background-size: 1rem 1rem;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+}
+
+.speed{
+    font-size: 100px;
+}
+
+.units{
+    font-size: 50px;
+    margin-left: 0.5rem;
+}
