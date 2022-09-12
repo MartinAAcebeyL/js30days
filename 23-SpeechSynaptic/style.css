@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+    background-image:
+        /* radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent), */
+        radial-gradient(circle at 0 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+        radial-gradient(circle at 0 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+    background-size: 10rem 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#speedSynaptic{    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 1rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.2rem;
+}
+
+#speedSynaptic :not(h1){
+    padding: 1rem;
+}
+
+#speedSynaptic input, select, textarea{
+    display: block;
+    width: 100%;
+    margin: 0.8rem auto;
+    border: none;
+    font-size: 1.8rem;
+}
+
+#speedSynaptic h1{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: #FFC600;
+    font-family: 'Pacifico', cursive;
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons > *{
+    width: 45%;
+    font-size: 2rem ;
+    background-color: #FFC600;
+    border: none;
+    cursor: pointer;
+}
