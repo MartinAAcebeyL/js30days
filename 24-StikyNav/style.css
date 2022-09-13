@@ -1,0 +1,102 @@
+:root{
+    --white-dark:#EEEEEE;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'helvetica neue';
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100vw;
+    background-color: var(--white-dark);
+}
+
+header{
+    height: 40vh;
+    background: url(https://source.unsplash.com/GKN6rpDr0EI/960x640) bottom center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1{
+    font-size: 12rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.site-wrap{
+    width: 40%;
+    margin: auto;
+    font-size: 2rem;
+    background-color: white;
+    padding: 4rem;
+    text-align: justify;
+    box-shadow: 5px 1rem gray;
+    transform: scale(0.98);
+    transition: transform 0.5s;
+}
+
+.site-wrap p{
+    margin-bottom: 1.9rem;
+}
+
+/* nav */
+nav{
+    width: 100%;
+    top: 0;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+#main ul{
+    width: 100%;
+    background: black;
+    font-size: 4rem;
+    display: flex;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+#main ul li{
+    flex: 1;
+    text-align: center;
+}
+
+#main a{
+    color: white;
+}
+
+li.logo {
+    transition: all 0.5s;
+    font-weight: 600;
+    display: none;
+}
+
+li.logo a{
+    color: red !important;
+}
+
+body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.site-wrapComplete {
+    transform: scale(1);
+}
