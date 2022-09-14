@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background:
+            linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
+            linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
+            linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
+            linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
+    min-height: 100vh;
+}
+
+h2{
+    font-size: 7rem;
+    text-align: center;
+    margin: 1rem;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    padding: 1rem;
+}
+
+li{
+    font-size: 3rem;
+}
+
+a{
+    color: yellow !important;
+    text-decoration: none;
+}
+
+img{
+    width: 22rem;
+    height: 22rem;
+    margin-right: 2rem;
+}
+
+.ulMain > li{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.ulMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.description{
+    display: flex;
+    width: 50rem;
+
+    font-size: 1.8rem;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    display: none;
+}
+
+.recursos > *{
+    font-size: 2rem;
+    width: 35rem;
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+    right: 70px;
+    display: none;
+}
+
+.redes{
+    background-color: white;
+    right: 50px;
+    display: none;
+}
+
+.redes > *{
+    font-size: 2rem;
+    width: 15rem;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
