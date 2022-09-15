@@ -46,10 +46,15 @@ img{
     margin-right: 2rem;
 }
 
-.ulMain > li{
+.titleKind{
+    text-align: center;
     background: rgba(0, 0, 0, 0.2);
+}
+
+.ulMain > li{
     padding: 10px 20px;
     border-radius: 5px;
+    display: block;
 }
 
 .ulMain{
@@ -58,10 +63,49 @@ img{
     justify-content: center;
 }
 
+
+.hidden{
+    opacity: 0;
+    position: relative;
+    right: 70px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 2px;
+    transition: all 1s;
+    transform: translateY(100px);
+    display: none;
+}
+
+.dropdownBackground {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
+    transition: all 0.3s, opacity 0.1s, transform 0.8s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.dropdownBackground.open {
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    transform: translateY(-500%) rotate(45deg);
+}
+
 .description{
     display: flex;
     width: 50rem;
-
     font-size: 1.8rem;
     background-color: white;
     padding: 2rem;
@@ -75,21 +119,37 @@ img{
     width: 35rem;
     background-color: white;
     padding: 2rem;
-    position: relative;
-    right: 70px;
-    display: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .redes{
     background-color: white;
     right: 50px;
-    display: none;
 }
 
 .redes > *{
     font-size: 2rem;
     width: 15rem;
     padding: 1rem;
-    position: relative;
     margin-bottom: 2rem;
+}
+
+a.button {
+    background: black;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.trigger-enter .hidden {
+    display: block;
+}
+
+.trigger-enter-active .hidden {
+    opacity: 1;
+}
+
+.dropdownBackground.open {
+    opacity: 1;
 }
