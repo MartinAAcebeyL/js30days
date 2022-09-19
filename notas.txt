@@ -1,4 +1,15 @@
+reto 1:
+    * data-[]=[]
+reto 2:
+    cambiar el valor de las variables css
+    document.documentElement.style.setProperty(`--${this.name}`, value + medida)
+reto 8:
+    canvas, practicar mucho
+reto 9:
+    diferentes formas de console
 reto 15
     *preventDefault
     previene la accion por defecto de ciertos etiquetas html
-    .l
+    .local storage
+reto 25:
+    once en listeners
